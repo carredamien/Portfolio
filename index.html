@@ -1,301 +1,293 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio: Damien Carré</title>
-    <meta name="description" content="Portfolio du développeur web Damien Carré - Nîmes">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >  
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Damien Carré</title>
+  <meta name="description" content="Portfolio du développeur web Damien Carré - Nîmes">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body> 
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <a class="navbar-brand" href="#" class="logo" ><img class="logoCode" src="./images/logo code.png" alt="logo"></a>
 
-  <body class="container-fluid">
-
-      
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-        <a class="navbar-brand" href="./" class="logo" ><img class="logoCode" src="./images/logo code.png" alt="logo"></a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                <i class="fas fa-bars fa-md"></i>
-        </button>
-        
-        <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
-            <ul class="nav nav-pills navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#about">Présentation</a></li>
-                <li class="nav-item"><a class="nav-link" href="#divider--skills">Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#divider--formation">Formations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              
-            </ul>
-        </div>
-    </nav>
-
-    <section id="about" class="container">
-        <div class="col-8 col-lg-4 profile-picture">
-            <img src="./images/moi.jpg" alt="Ma photo" class="rounded-circle">
-        </div>
-        <div class="heading">
-                <h1>Damien Carré</h1>
-                <h3>Développeur Web &amp; Web mobile</h3> <br>
-                
-                <div>
-                    <a class="button1" target="_blank" id="person-email" href="mailto:damiencarre07@gmail.com">M'envoyer un email</a>
-
-                    <a target="_blank" class="button1" href="./docs/cv_2022_cd.pdf">Voir mon CV</a>
-                </div>
-        </div>
-    </section>
-     <div class="white-divider" id="divider--skills"></div>
-       <br>
-          <section id="skills">
-          
-            <div class="heading">
-                <h2>Compétences</h2>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                <h5>HTML</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                <h5>CSS</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                <h5>SCSS</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                <h5>BOOTSTRAP</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                       
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                <h5>JAVASCRIPT</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                <h5>VUEJS</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                <h5>PHP</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                <h5>WORDPRESS</h5>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </section>
-     <div class="white-divider" id="divider--skills"></div>
-          <section id="skills">
-          
-            <div class="heading">
-                <h2>Autres compétences</h2>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                <h5>Adobe XD</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                <h5>Adobe Illustrator</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                       
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                <h5>Adobe Photoshop</h5>
-                            </div>
-                        </div>
-                        <div class="progress"> 
-                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                <h5>Word & Excel</h5>
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </section>
-            <div class="white-divider" id="divider--formation"></div>
-        <section id="experience">
-        
-            <div class="container">
-                
-                <div class="heading">
-                    <h2>Formations &nbsp; & &nbsp; Expériences</h2>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-                        <div class="timeline-panel-container">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h3>Openclassrooms</h3>
-                                    <h4>Formation Développeur Web</h4>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> Juillet 2021 à Janvier 2022</p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Formation de Développeur Web orientée Javascript. </p>
-                                    <p>Formation de 6 mois certifiée grand Label du numérique - équivalent niveau 5 (bac +2). </p>
-                                    <p>Html, Css, Scss, Seo, Javascript, NodeJs, Sql, MongoDb et VueJs. </p>
-                                    <p>Différents projets réalisés durant cette formation afin de monter en compétences sur le frontend et le Seo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-                        <div class="timeline-panel-container-inverted">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h3>Be Vinum à Vauvert</h3>
-                                    <h4>Stage marketing digital</h4>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> mars 2021 </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Proposition de design, </p>
-                                    <p>Refonte partielle de site,</p>
-                                    <p>Création de signature email personnalisée et vidéo publicitaire,...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-                        <div class="timeline-panel-container">
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h3>O'Clock</h3>
-                                    <h4>Formation Développeur Web</h4>
-                                    <p class="text-muted"><small class="fas fa-clock"></small> </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Formation certifiée grand Label du numérique - équivalent niveau 5 (bac +2). </p>
-                                    <p>Formation de 6 mois certifiée grand Label du numérique - équivalent niveau 5 (bac +2).</p>
-                                    <p>Html, Css, Scss, Php, Javascript, WordPress, Sql et VueJs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                
-                </ul>
-            </div>
-            
-        </section>     
-        <section id="portfolio">
-            <div class="container">
-                <div class="white-divider"></div>
-                <div class="heading">
-                    <h2>Portfolio</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="http://compagnieplay.com" target="_blank">
-                            <img class="img-thumbnail" src="images/cieplay.JPG" alt="La Compagnie Play">
-                        </a>
-                    </div>
-                     <div class="col-md-4">
-                        <a href="https://lanaturoquotidien.fr/" target="_blank">
-                            <img class="img-thumbnail" src="images/la_nature_au_quotidien.jpg" alt="La Natur'O Quotidien">
-                        </a>
-                    </div>
-                     <div class="col-md-4">
-                        <a href="https://carredamien.github.io/reservia.github.io/" target="_blank">
-                            <img class="img-thumbnail" src="images/reservia.jpg" alt="Réservia">
-                        </a>
-                    </div>
-                </div>
-                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="https://carredamien.github.io/DamienCarre_3_16082021/" target="_blank">
-                            <img class="img-thumbnail" 
-                           src="images/ohmyfood.JPG" alt="OhMyFood">
-                        </a>
-                      
-                
-                </div>
-            
-            </div>
-            
-        </section>
-      
-      
-       <!-- <section id="recommandations">
-            <div class="avis container">
-                <div class="heading">
-                    <h2 class="h2-avis">Avis</h2>
-                </div>
-                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                         <li data-target="#myCarousel" data-slide-to="1"></li>
-                         <li data-target="#myCarousel" data-slide-to="2"></li>  
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <h3>"John t'es le meilleur! Merci pour tout..."</h3>
-                            <h4>Larry Page, Google Co-Founder</h4>       
-                        </div>
-                          <div class="carousel-item">
-                            <h3>"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h3>
-                            <h4>Jack Dorsey, Twitter Founder and CEO</h4>       
-                        </div>
-                          <div class="carousel-item">
-                            <h3>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h3>
-                            <h4>Mark Zuckerberg, Facebook Founder and CEO</h4>       
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" role="button">
-                        <span class="fas fa-chevron-left fa-2x"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next" role="button">
-                        <span class="fas fa-chevron-right fa-2x"></span>
-                    </a>
-                
-                </div>
-            
-            </div> -->
-           
-               
-        
-        </section>
-        <footer class="text-center">
-            <a href="#about">
-                <span class="fas fa-chevron-up"></span>
-            </a>
-            <h5>© Tout droits réservés - Damien Carré</h5>
-        </footer>
-      
-  </body>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <i class="fas fa-bars fa-md"></i>
+    </button>
     
-</html> 
+    <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+        <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#about">Présentation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#divider--skills">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#divider--formation">Formations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          
+        </ul>
+    </div>
+</nav>
+  <section id="about" class=" container d-flex flex-column justify-content-center align-items-center mt-5">
+    <div class="col-6 col-lg-2  profile-picture">
+        <img src="./images/moi.jpg" alt="Ma photo" class="rounded-circle">
+    </div>
+    <div class="heading mt-5">
+      <h1>Damien Carré</h1>
+      <h2>Développeur Web &amp; Web mobile</h2>
+      <div class="mt-5">
+          <a class="btn btn-outline-light p-3 m-1" target="_blank" id="person-email" href="mailto:damiencarre07@gmail.com">M'envoyer un email</a>
+          <a target="_blank" class="btn btn-outline-light p-3 m-1" href="./docs/cv_2022_cd.pdf">Voir mon CV</a>
+      </div>
+    </div>
+</section>
+<div class="white-divider" id="divider--skills"></div>
+
+<section class="" id="skills">  
+  <div class="heading">
+      <h2>Compétences</h2>
+  </div>
+  <div class="container">
+      <div class="row ">
+          <div class="col-md-6">
+              <div class="progress w-100"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      <h5>HTML</h5>
+                  </div>
+              </div>
+              <div class="progress w-100"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                      <h5>CSS</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                      <h5>SCSS</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                      <h5>BOOTSTRAP</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+             
+              <div class="progress mt-0 progress--js"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      <h5>JAVASCRIPT</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                      <h5>VUEJS</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      <h5>PHP</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                      <h5>WORDPRESS</h5>
+                  </div>
+              </div>
+          </div>
+      
+      </div>
+  </div>
+</section>
+<div class="white-divider" id="divider--skills"></div>
+<section id="skills">
+          
+  <div class="heading">
+      <h2>Autres compétences</h2>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      <h5>Adobe XD</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                      <h5>Adobe Illustrator</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+             
+              <div class="progress mt-0 progress--js"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      <h5>Adobe Photoshop</h5>
+                  </div>
+              </div>
+              <div class="progress"> 
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                      <h5>Word & Excel</h5>
+                  </div>
+              </div>
+          </div>
+      
+      </div>
+  </div>
+</section>
+<div class="white-divider" id="divider--formation"></div>
+<section id="experience">
+    <div class="container">
+        <div class="heading">
+            <h2>Formations &nbsp; & &nbsp; Expériences</h2>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+                <div class="timeline-panel-container ">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3>Openclassrooms</h3>
+                            <h4>Formation Développeur Web</h4>
+                            <p class="text-muted"><small class="fas fa-clock"></small> Juillet 2021 à Janvier 2022</p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Formation de Développeur Web orientée Javascript. </p>
+                            <p>Formation de 6 mois certifiée grand Label du numérique - équivalent niveau 5 (bac +2). </p>
+                            <p>Html, Css, Scss, Seo, Javascript, NodeJs, Sql, MongoDb et VueJs. </p>
+                            <p>Différents projets réalisés durant cette formation afin de monter en compétences sur le frontend et le Seo.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+                <div class="timeline-panel-container-inverted">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3>Be Vinum à Vauvert</h3>
+                            <h4>Stage marketing digital</h4>
+                            <p class="text-muted"><small class="fas fa-clock"></small> mars 2021 </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Proposition de design, </p>
+                            <p>Refonte partielle de site,</p>
+                            <p>Création de signature email personnalisée et vidéo publicitaire,...</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+                <div class="timeline-panel-container">
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h3>O'Clock</h3>
+                            <h4>Formation Développeur Web</h4>
+                            <p class="text-muted"><small class="fas fa-clock"></small>mars 2020 à octobre 2020 </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Formation certifiée grand Label du numérique - équivalent niveau 5 (bac +2). </p>
+                            <p>Formation de 6 mois certifiée grand Label du numérique - équivalent niveau 5 (bac +2).</p>
+                            <p>Html, Css, Scss, Php, Javascript, WordPress, Sql et VueJs.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+        </ul>
+    </div>
+</section>  
+</section>     
+<section id="portfolio">
+    <div class="container">
+        <div class="white-divider"></div>
+        <div class="heading">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://compagnieplay.com" target="_blank">
+                    <img class="img-thumbnail" src="images/cieplay.JPG" alt="La Compagnie Play">
+                </a>
+            </div>
+             <div class="col-md-4">
+                <a href="https://lanaturoquotidien.fr/" target="_blank">
+                    <img class="img-thumbnail" src="images/la_nature_au_quotidien.jpg" alt="La Natur'O Quotidien">
+                </a>
+            </div>
+             <div class="col-md-4">
+                <a href="https://carredamien.github.io/reservia.github.io/" target="_blank">
+                    <img class="img-thumbnail" src="images/reservia.jpg" alt="Réservia">
+                </a>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-md-4">
+                <a href="https://carredamien.github.io/DamienCarre_3_16082021/" target="_blank">
+                    <img class="img-thumbnail" 
+                   src="images/ohmyfood.JPG" alt="OhMyFood">
+                </a>
+              
+        
+        </div>
+    
+    </div>
+    
+</section>
+
+
+<!-- <section id="recommandations">
+    <div class="avis container">
+        <div class="heading">
+            <h2 class="h2-avis">Avis</h2>
+        </div>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                 <li data-target="#myCarousel" data-slide-to="2"></li>  
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <h3>"John t'es le meilleur! Merci pour tout..."</h3>
+                    <h4>Larry Page, Google Co-Founder</h4>       
+                </div>
+                  <div class="carousel-item">
+                    <h3>"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h3>
+                    <h4>Jack Dorsey, Twitter Founder and CEO</h4>       
+                </div>
+                  <div class="carousel-item">
+                    <h3>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h3>
+                    <h4>Mark Zuckerberg, Facebook Founder and CEO</h4>       
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" role="button">
+                <span class="fas fa-chevron-left fa-2x"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next" role="button">
+                <span class="fas fa-chevron-right fa-2x"></span>
+            </a>
+        
+        </div>
+    
+    </div> -->
+   
+       
+
+</section>
+<footer class="text-center">
+    <a href="#about">
+        <span class="fas fa-chevron-up"></span>
+    </a>
+    <h5>© Tout droits réservés - Damien Carré</h5>
+</footer>
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
