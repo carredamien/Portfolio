@@ -120,7 +120,7 @@ section .heading{
   border: 2px solid rgb(49, 46, 46);
   border-radius:1rem;
   max-width: 100%;
-  width: 90%;
+  width: 95%;
 }
 #experience .heading h2{
   margin-top: 2rem;
@@ -141,8 +141,8 @@ section .heading{
 .timeline-panel-container, .timeline-panel-container-inverted{
   background: #fff;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem 0;
 }
 .fa-briefcase{
   display: none;
@@ -198,6 +198,7 @@ div#slider figure {
   }
   .navbar{
     border-bottom: 2px solid rgb(49, 46, 46);
+    margin: 0 auto;
   }
   .profile-picture{
     width: 15rem!important;
@@ -220,7 +221,7 @@ div#slider figure {
     padding-top: 0;
     border: 2px solid rgb(49, 46, 46);
     border-radius:1rem;
-    max-width: 90%;
+    max-width: 95%;
     width: 95%;
   }
   
@@ -229,6 +230,10 @@ div#slider figure {
   .timeline{
     position: relative;
   }
+  .timeline-panel{
+    position: relative;
+  }
+  
   .timeline::after {
     position: absolute;
     top: 0;
@@ -239,13 +244,19 @@ div#slider figure {
     width: 5px;
     background-color:rgb(49, 46, 46);
   }
-  .timeline-panel-container, .timeline-panel-container-inverted{
+  .timeline-panel-container{
     position: relative;
     margin-top: 2rem!important;
-    margin-right: 3rem;
+    margin-right: 3rem;  
   }
   .timeline-panel-container-inverted{
-   left: 105%;
+    position: relative;
+    margin-top: 2rem!important;
+    margin-left: 3rem;
+  }
+  .timeline-panel-container-inverted{
+   position: relative;
+   right: -100%;
   }
   .timeline-panel-container::after {
     position: absolute;
@@ -253,70 +264,50 @@ div#slider figure {
     left:calc(100% + 3rem);
     transform: translateX(-50%);
     content: '';
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background-color: rgb(49, 46, 46);
     top: 15px;
     border-radius: 50%;
     z-index: 1;
   }
-  .timeline-panel-container-inverted::after {
+ 
+  .timeline-panel-container-inverted::after{
     position: absolute;
     top:3rem!important;
-    left:calc(-16.5% + 3rem);
-    transform: translateX(-50%);
+    right:calc(100% + 2rem);
+    /* transform: translateX(-50%); */
     content: '';
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     background-color: rgb(49, 46, 46);
     top: 15px;
     border-radius: 50%;
     line-height: 3rem;
     z-index: 1;
   }
-
-  .fa-briefcase{
-    display: block;
-    position: absolute;
-    top:3.7rem!important;
-    left:calc(100% + 2.95rem);
-    transform: translateX(-50%);
-    color:#589994;
-    font-size: 1.5rem;
-    z-index: 2;
-  }
-  .fa-briefcase-inverted{
-    display: block;
-    position: absolute;
-    top:3.7rem!important;
-    left:calc(100% + 2.9rem);
-    left:calc(-16.5% + 2.95rem);
-    transform: translateX(-50%);
-    color:#589994;
-    font-size: 1.5rem;
-    z-index: 2;
-  }
+ 
   .timeline-panel:after{
     position:absolute;
-    top: 3.7rem;
-    right: -14px;
+    top: 1.7rem;
+    right: -20px;
     display:inline-block;
     border-top: 14px solid transparent;
     border-left: 14px solid #fff;
     border-right: 0 solid #fff;
     border-bottom: 14px solid transparent;
     content: " ";
-}
- .timeline-panel-container-inverted .timeline-panel:after{
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-}
-#slider img{
-  width:auto;
-  height:90%;
-  margin: 0 10px;
-}
+  }
+  .timeline-panel-container-inverted .timeline-panel:after{
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -20px;
+      right: auto;
+  }
+  #slider img{
+    width:auto;
+    height:90%;
+    margin: 0 10px;
+  }
 
 }
