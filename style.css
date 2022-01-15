@@ -1,0 +1,322 @@
+/* Général */
+body{
+  background-color:#589994;
+  color: rgb(49, 46, 46);
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1,h3,h4,h5,h6{
+  font-weight: bold;
+}
+h2{
+  color:rgb(75, 71, 71)!important;
+}
+section .heading h2{
+  text-transform: capitalize;
+}
+.white-divider{
+  width: 65% ;
+  height: 2px;
+  background:#fff;
+  margin: 3rem auto ;
+  border-radius: 1px;
+}
+/* navbar */
+.navbar{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.logoCode{
+  width: 2rem;
+}
+
+.navbar a{
+  color:rgb(75, 71, 71)!important;
+}
+.navbar-toggler-icon{
+  color:rgb(75, 71, 71)!important;
+
+}.nav-pills .nav-link{
+  color: rgb(75, 71, 71) !important;
+  text-align: center;
+  margin:0.8rem;
+  padding: 1rem!important;
+  transition: 0.5s ease-in;
+}
+.nav-link.active, .nav-link:hover{
+  color: #589994 !important;
+  background-color: #fff !important;
+  border-radius: 0.2rem;
+}
+.navbar-toggler{
+  border: none;
+}
+
+/* présentation */
+.profile-picture{
+  width: 8rem!important;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.button1{
+  margin:0.5rem 1rem;
+  padding: 1rem;
+  height: 4rem!important;
+  width: 15rem!important;
+  border: 2px solid #fff;
+  border-radius:0.2rem;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  transition: 0.5s ease-in;
+}
+.button1:hover{
+  border: 2px solid rgb(49, 46, 46);;
+  color:rgb(49, 46, 46);
+}
+
+section .heading{
+  text-align: center;
+  width: 100%;
+}
+/* SKILLS */
+.section--skills{
+  background: #589994;
+  margin: auto;
+  padding-top: 0;
+  border: 2px solid rgb(49, 46, 46);
+  border-radius:1rem;
+  width: 95%;
+}
+.section--skills .heading h2 {
+  color: #fff;
+  margin-top: 1rem;
+}
+.section--skills .progress{
+  height: 1.4rem;
+  margin: 1.5rem auto;
+  background: #ddd;
+}
+.section--skills .progress-bar{
+  background: rgb(75, 71, 71);
+}
+.section--skills .progress h5{
+  margin-top: 5px;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1rem;
+}
+
+/* EXPERIENCE */
+#experience{
+  margin: 0rem auto;
+  padding-top: 0;
+  border: 2px solid rgb(49, 46, 46);
+  border-radius:1rem;
+  max-width: 100%;
+  width: 90%;
+}
+#experience .heading h2{
+  margin-top: 2rem;
+  color: #fff;
+}
+.timeline-heading h3{
+  margin-top: 1rem;
+  color: #589994!important;
+}
+.timeline-heading h4{
+  margin-top: 1rem;
+  color: rgb(49, 46, 46);
+}
+.timeline--container > ul{
+  margin-top: 1rem;
+  list-style: none;
+}
+.timeline-panel-container, .timeline-panel-container-inverted{
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+}
+.fa-briefcase{
+  display: none;
+}
+
+/* PORTFOLIO */
+#portfolio{
+  background: #589994;
+}
+#portfolio .heading h2{
+  color: #fff;
+}
+#portfolio img{
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); 
+}
+#portfolio img:hover{
+  filter: none;
+  -webkit-filter: none; 
+}
+#portfolio .col-md-4{
+  margin-bottom: 20px;
+}
+.fa-chevron-up{
+  color:rgb(49,46,46);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/*slider*/
+div#slider {
+    margin: 1rem auto 0;
+  }
+  #slider img{
+    width:auto;
+    height:60%;
+    margin: 0 10px;
+}
+div#slider figure {
+	animation: linear 90s slidy infinite;  /* Bertrand, si tu veux le ralentir ou accélérer le slider, c'est ici*/
+}
+
+    @keyframes slidy {
+		0% { transform: translateX(0); }
+		100% { transform: translateX(calc(-12rem * 16))} /*si tu rajoutes des images, il y faudra modifier ici selon besoin*/
+    }
+
+@media screen and (min-width: 768px) {
+  .logoCode{
+    width: 2.8rem;
+  }
+  .navbar{
+    border-bottom: 2px solid rgb(49, 46, 46);
+  }
+  .profile-picture{
+    width: 15rem!important;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* skills */
+  .section--skills .progress {
+    height: 1.8rem;
+  }
+  .progress--js{
+    margin-top: 1.5rem!important;
+  }
+  
+  #experience{
+    margin: auto;
+    padding-top: 0;
+    border: 2px solid rgb(49, 46, 46);
+    border-radius:1rem;
+    max-width: 90%;
+    width: 95%;
+  }
+  
+  /*Timeline*/
+  
+  .timeline{
+    position: relative;
+  }
+  .timeline::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 5px;
+    background-color:rgb(49, 46, 46);
+  }
+  .timeline-panel-container, .timeline-panel-container-inverted{
+    position: relative;
+    margin-top: 2rem!important;
+    margin-right: 3rem;
+  }
+  .timeline-panel-container-inverted{
+   left: 105%;
+  }
+  .timeline-panel-container::after {
+    position: absolute;
+    top:3rem!important;
+    left:calc(100% + 3rem);
+    transform: translateX(-50%);
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(49, 46, 46);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .timeline-panel-container-inverted::after {
+    position: absolute;
+    top:3rem!important;
+    left:calc(-16.5% + 3rem);
+    transform: translateX(-50%);
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(49, 46, 46);
+    top: 15px;
+    border-radius: 50%;
+    line-height: 3rem;
+    z-index: 1;
+  }
+
+  .fa-briefcase{
+    display: block;
+    position: absolute;
+    top:3.7rem!important;
+    left:calc(100% + 2.95rem);
+    transform: translateX(-50%);
+    color:#589994;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  .fa-briefcase-inverted{
+    display: block;
+    position: absolute;
+    top:3.7rem!important;
+    left:calc(100% + 2.9rem);
+    left:calc(-16.5% + 2.95rem);
+    transform: translateX(-50%);
+    color:#589994;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  .timeline-panel:after{
+    position:absolute;
+    top: 3.7rem;
+    right: -14px;
+    display:inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+ .timeline-panel-container-inverted .timeline-panel:after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+#slider img{
+  width:auto;
+  height:90%;
+  margin: 0 10px;
+}
+
+}
