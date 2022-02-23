@@ -39,9 +39,6 @@ new Typewriter(h1, {
   .typeString("VueJs et NodeJs")
   .pauseFor(400)
   .deleteChars(33)
-  .typeString("mais aussi avec WordPress et PhP.")
-  .pauseFor(3000)
-  .deleteChars(17)
   .start();
 
 /**
