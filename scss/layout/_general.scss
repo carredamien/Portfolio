@@ -1,0 +1,46 @@
+//general parameters
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+h2{
+  font-size: $h2desktop;
+  font-family: $ff;
+  color: $primary;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: $primary;
+}
+.overflow{
+  overflow: hidden;
+}
+
+.contact{
+  grid-area: contact;
+}
+.contact--link{
+  font-weight: bold;
+  cursor: pointer;
+}
+.bold{
+  font-weight: bold;
+}
+
+//structure
+.container {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header"
+    "aside"
+    "realisations"
+    "prestations"
+    "contact"
+    "footer";
+    
+} 
+

@@ -1,0 +1,14 @@
+.custom-logo{
+  grid-area: logo;
+  width: 5rem;
+  height: auto;
+  margin: 2rem 0 0 8rem;
+}
+
+@media screen and (max-width:$widthLabtop){
+  .custom-logo{
+    width:4rem;
+    height: auto;
+    margin: 2rem 0 0 2rem;
+  }
+}

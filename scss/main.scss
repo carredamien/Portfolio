@@ -1,0 +1,26 @@
+// import nos ressources externes ou variables
+@import './includes/reset';
+@import './includes/variables';
+
+
+//import des éléments de layout
+@import './layout/general';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/rgpd';
+
+//import des composants
+@import './component/logo';
+@import './component/navbar';
+@import './component/presentation';
+@import './component/button';
+@import './component/prestations';
+@import './component/aside';
+@import './component/realisations';
+@import './component/card';
+@import './component/form';
+@import './component/footer';
+
+
+
+

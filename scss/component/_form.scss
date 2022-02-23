@@ -1,0 +1,152 @@
+.contact{
+  grid-area: contact;
+  background: $bg-tertiary;
+  padding: 2rem 4rem 2rem ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  4rem auto;
+  grid-template-areas:  "title title"
+                        "details form";
+  justify-content: center;
+  & h2{
+    position: relative;
+    grid-area: title;
+    font-size: $h2desktop;
+    margin-top: 1rem;
+    margin-left: 9rem;
+      ::before{
+        content:"";
+        position: absolute;
+        bottom:0rem;
+        border-radius: 20rem;
+        width: 3.5rem;
+        height: 0.6rem;
+        background: $secondary;
+      }
+  }
+
+  & .details{
+    font-family: $ff;
+    color: $primary;
+    grid-area: details;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    padding: 8rem 1rem 0rem 3rem;
+    line-height: 1.4;
+    font-size: $pdesktop;
+    border-right: 2px solid $white;
+    width: 100%;
+    height: 35rem;
+    & p:first-child{
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    & p:nth-child(2) span{
+      font-weight: bold;
+    }
+    & p{
+      margin-top: 0.3rem;
+    }
+  }
+
+  & form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: form;
+    background: $bg-primary;
+    border-radius: 0.5rem;
+    height: auto;
+    width: 70%;
+    max-width: 50rem;
+    padding: 2rem 6rem 0rem;
+    margin: 3rem auto;
+    font-family: $ff;
+    & h3{
+      align-self: center;
+      font-size: $h3formdesktop;
+      color: $secondary;
+      margin-top: 1rem;
+    }
+    & .mail{
+      width: 100%;
+      margin: 4rem 0 6rem;
+      cursor: pointer;
+    }
+  }
+
+}
+
+@media screen and (max-width:$widthLabtop){
+  .contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3.5rem auto 1fr;
+    grid-gap:0.5rem;
+    grid-template-areas:  "title"
+                          "details" 
+                          "form";
+    justify-content: center;
+    padding: 2rem 2rem;
+    margin-bottom: 0rem;
+    h2{
+      grid-area: title;
+      font-size: $h2;
+      margin-top: 1rem;
+      margin-left: 0rem;
+      ::before{
+        bottom: 0rem;
+      }
+    }
+    & .details{
+      border-right: 0 solid transparent;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 3rem auto 0rem;
+      padding: 1rem 0rem;
+      line-height: 1.2;
+      font-size: $p;
+      border-right: none;
+      height: 18rem;
+    
+      & br{
+        display: none;
+      }
+    }
+    & .container--form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+  
+    & form{
+      grid-area: form;
+      background: $bg-primary;
+      border-radius: 0rem;
+      width: 100%;
+      height: auto;
+      margin: 0 0 4rem;
+      padding: 2rem 5%;
+      display: flex;
+      flex-direction: column;
+      font-family: $ff;
+  
+      & h3{
+        font-size: $h3form;
+        color: $secondary;
+        margin-bottom: 1rem;
+      }
+      & .mail{
+        width: 100%;
+        margin: 0 ;
+        cursor: pointer;
+      }
+    }
+  }
+}

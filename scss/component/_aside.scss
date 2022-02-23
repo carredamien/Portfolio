@@ -1,0 +1,62 @@
+aside{
+  grid-area: aside;
+  margin: 2rem auto 5rem;
+  padding: 1rem;
+  & h2{
+    position: relative;
+    font-size: $h2desktop;
+    font-family: $ff;
+    color: $primary;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    ::before{
+      content:"";
+      position: absolute;
+      width: 3.5rem;
+      height: 0.6rem;
+      background: $secondary;
+      border-radius: 20rem;
+      bottom:-0.7rem;
+    }
+  }
+  & p{
+    font-size: $pdesktop;
+    font-family: $ff;
+    color: $primary;
+    margin: 3rem 0 1rem 3rem;
+    line-height: 2rem;
+    & br:last-child{
+      display: none;
+    }
+  }
+  
+  br{
+    display: none;
+  }
+  .return{
+    display: block;
+  }
+}
+
+@media screen and (max-width:$widthLabtop){
+
+  aside{
+    grid-area: aside;
+    padding: 1rem 2rem 0;
+    & h2{
+      margin-top: 1rem;
+      margin-left: 0rem;
+      font-size: $h2;
+    }
+  
+    & p{
+      font-size: $p;
+      font-family: $ff;
+      color: $primary;
+      margin: 2rem 0 0 0;
+      padding:0 0.5rem;
+      line-height:2rem;
+    }
+  }
+}

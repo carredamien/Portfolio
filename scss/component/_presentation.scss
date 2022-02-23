@@ -1,0 +1,196 @@
+.presentation{
+  grid-area: presentation;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-row: auto;
+  grid-template-areas: "img title ";
+  font-size: $h1desktop;
+  color: $bg-secondary;
+  font-family: $ff;
+
+  & .container--title{
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin-right: 15vw;
+
+  & .title{
+    position: relative;
+    margin: 2rem 1rem 3rem 0;
+    letter-spacing: 1px;
+    font-size: $h1desktop;
+    color: $bg-secondary;
+    font-family: $ff;
+    z-index: 2;
+    }
+  }
+    & .btn--contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 8rem;
+    padding:1.4rem 2rem ;
+    background-color: $secondary;
+    border-radius: 4px;
+    color: $bg-primary;
+    font-size: $buttontitledesktop;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    &:hover{
+      background-color: darken($secondary,10%);
+    }
+  }
+  & .img{
+    grid-area: img;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    & img{
+      position: absolute;
+      bottom:0;
+      width: 40vh;
+      // max-width: 33rem;
+      margin-left: 15vw;
+    }
+  }
+
+}
+
+@media screen and (max-width:992px){
+  .presentation{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto 1fr ;
+    grid-template-areas: "title"
+                         "img";
+  
+    // width: 100%;
+    // height: 89.5%;
+    & .container--title{
+      grid-area: title;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      margin-right: 0;
+  
+    & .title{
+      margin: 3rem 1rem;
+      letter-spacing: 1px;
+      font-size: $h1;
+      color: $bg-secondary;
+      font-family: $ff;
+      text-align: center;
+      }
+    }
+      & .btn--contact{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:1.3rem 1.8rem;
+      background-color: $secondary;
+      color: $bg-primary;
+      font-size: $buttontitle;;
+     
+      transition: background-color 0.2s ease-in;
+      cursor: pointer;
+      scroll-behavior: smooth;
+      &:hover{
+        background-color: darken($secondary,10%);
+      }
+    }
+    & .img{
+      position: relative;
+      display: flex;
+      padding: 1rem 0;
+      max-height: 30rem;
+    
+      & img{
+        position: absolute;
+        bottom: 0;
+        left:1vw;
+        height: auto;
+        // max-width: 50%;
+        max-width: 40%;
+        object-fit: cover;
+        margin-left: 0;
+      }
+    }
+  } 
+
+}
+@media screen and (max-width:570px){
+
+    .presentation{
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows: auto 1fr ;
+      grid-template-areas: "title"
+                           "img";
+    
+      // width: 100%;
+      // height: 89.5%;
+      & .container--title{
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        margin-right: 0;
+    
+      & .title{
+        margin: 3rem 1rem;
+        letter-spacing: 1px;
+        font-size: $h1;
+        color: $bg-secondary;
+        font-family: $ff;
+        text-align: center;
+        }
+      }
+        & .btn--contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:1.3rem 1.8rem;
+        background-color: $secondary;
+        color: $bg-primary;
+        font-size: $buttontitle;;
+       
+        transition: background-color 0.2s ease-in;
+        cursor: pointer;
+        scroll-behavior: smooth;
+        &:hover{
+          background-color: darken($secondary,10%);
+        }
+      }
+      & .img{
+        position: relative;
+        display: flex;
+        padding: 1rem 0;
+        max-height: 20rem;
+      
+        & img{
+          position: absolute;
+          bottom: 0;
+          left:0rem;
+          height: auto;
+          // max-width: 50%;
+          min-height: 40%;
+          max-height: 258px;
+          max-width: 161px;
+          object-fit: cover;
+          margin-left: 0;
+        }
+      }
+    } 
+
+}

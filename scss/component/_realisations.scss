@@ -1,0 +1,54 @@
+.realisations{
+  grid-area: realisations;
+  background: $bg-tertiary;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr;
+  grid-gap:2rem;
+  grid-template-areas: "title--realisations" 
+                       "card";
+  justify-content: center;
+  & h2{
+    position: relative;
+    grid-area: title--realisations;
+    font-size: $h2desktop;
+    margin-top: 1rem;
+    margin-left: 9rem;
+      ::before{
+        content:"";
+        position: absolute;
+        bottom:0rem;
+        border-radius: 20rem;
+        width: 3.5rem;
+        height: 0.6rem;
+        background: $secondary;
+      }
+  }
+}
+
+@media screen and (max-width:$widthLabtop){
+
+  .realisations{
+    grid-area: realisations;
+    // padding: 1rem 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1fr;
+    grid-gap:1rem;
+    grid-template-areas: "title--realisations" 
+    "card";
+    justify-content: center;
+    padding: 2rem 2rem;
+    & h2{
+      grid-area: title--realisations;
+      font-size: $h2;
+      margin-top: 1rem;
+      margin-left: 0rem;
+      position: relative;
+        ::before{
+          bottom:0.4rem;
+        }
+    }
+  }
+}

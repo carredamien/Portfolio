@@ -1,0 +1,75 @@
+// .btn--contact{
+//   padding: 0.8rem 1.5rem;
+//   background-color: $secondary;
+//   border-radius: 10rem;
+//   color: $bg-primary;
+//   font-size: 1.4rem;
+//   // box-shadow: 0 5px 5px;
+//   transition: background-color 0.2s ease-in;
+//   cursor: pointer;
+//   scroll-behavior: smooth;
+//   &:hover{
+//     background-color: darken($secondary,10%);
+//   }
+// }
+
+.btn--plus{
+  background: $primary;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ECB365;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  margin: 1rem 3rem;
+  &:hover{
+    
+    border-radius: 0px;
+    background-color: lighten(#064663, 4%);
+    
+  }
+}
+
+.btn-up{
+  position: fixed;
+  bottom:3rem;
+  right:-7rem;
+  width: 4rem;
+  height: 4rem;
+  padding-right: 2rem;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 1px 1px $secondary;
+  cursor: pointer;
+  transition: right  0.3s ease;
+  opacity: 1;
+  z-index: 1;
+
+}
+
+
+@media screen and (max-width:$widthLabtop){
+  .btn--contact{
+    font-size: 1.3rem;
+    padding: 0.7rem 1.3rem;
+  }
+  .btn-up{
+  
+    bottom:3rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $secondary;
+    border-radius: 8px;
+  
+  }
+  .btn--plus{
+    margin: 1rem 1rem;
+  
+  }
+}

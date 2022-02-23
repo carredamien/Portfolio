@@ -4,313 +4,287 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Damien Carré</title>
-  <meta name="description" content="Portfolio du développeur web Damien Carré - Vauvert (30600)">
-  <link rel="icon" href="./images/logo_code.png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/main.css">
+  <title>ToDeV</title>
+  <meta name="description" content="ToDeV - création de sites Web situé à Vauvert dans le Gard près de Nîmes">
+  <script src="https://kit.fontawesome.com/a333dfc89a.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./img/logo_code.webp" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="container-fluid" data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-offset="0"  tabindex="0">
-  <header >
-    <nav id="mynavbar" class="navbar navbar-expand-lg navbar-light  py-3 sticky-lg-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" ><img class="logoCode" src="./images/logo_code.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon ms-end "></span>
-        </button>
-        <div class="collapse navbar-collapse fs-5" id="navbarNav">
-          <ul class="navbar-nav text-center mx-auto ">
-            <li class="nav-item mx-3">
-              <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Présentation</a>
-            </li>
-            <li class="nav-item mx-3 ">
-              <a class="nav-link" href="#divider--skills">Compétences</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#divider--formation">Formation</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="#divider--certification">Certifications</a>
-            </li>
-          </ul>
+<body class="container">
+  <header class="header">
+    <div class="container--navbar">
+      <img class="custom-logo" src="./img/logo_code.webp" alt="Logo du site ToDeV">
+      <nav class="navbar">
+        <div class="burger">
+          <span></span>
         </div>
+        <ul class="nav nav--mobil">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#prestations">Formations</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+    <section class="presentation">
+      <div class="container--title" >
+        <h1 class="title">
+          <span class="text--h1">internet?</span>
+        </h1>
+        <a class="btn--contact" href="#contact">Contactez-moi</a> 
       </div>
-    </nav>
+      <div class="img">
+        <img src="./img/moi6rbg.png" alt="Photo de moi" >
+      </div>
+    </section>
   </header>
-  <main>
-    <section id="scrollspyHeading1" class="container d-flex flex-column justify-content-center align-items-center mt-0 mt-md-5 text-center">
-      <div class="col-6 col-lg-4 ">
-        <img src="./images/moi.jpg" alt="Ma photo" class="profile-picture rounded-circle">
-      </div>
-      <div class="heading mt-5 text-center">
-        <h1>Damien Carré</h1>
-        <h2>Développeur Web &amp; Web mobile</h2>
-        <div class="buttons mt-5 text-center">
-            <a class="col-md-6 button1" target="_blank" id="person-email" href="mailto:damiencarre07@gmail.com">M'envoyer un email</a>
-            <a class="col-md-6 button1" target="_blank" href="./docs/cv_developpeur_web_carre_damien_16_02_2022.pdf">Voir mon CV</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="white-divider" id="divider--skills"></div>
-
-    <section class="section--skills">  
-      <div class="heading">
-          <h2>Compétences</h2>
-      </div>
-      <div class="container mb-3">
-          <div class="row ">
-              <div class="col-md-6">
-                  <div class="progress w-100"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                          <h5>Html</h5>
-                      </div>
-                  </div>
-                  <div class="progress w-100"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          <h5>Css / Scss</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                          <h5>Bootstrap</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-                          <h5>NodeJs</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          <h5>Git</h5>
-                      </div>
-                  </div>
+  <aside>
+    <h2><span>Développeur frontend</span></h2>
+    <p>J'aime travailler et apprendre avec Javascript et ses framework.</p> 
+    <p>Je sais aussi développer avec NodeJs, WordPress (php & élémentor).</p>
+    <a href="./img/cv_developpeur_web_carre_damien_16_02_2022.pdf" target="-blank"><button class="btn--plus">Voir mon CV</button></a>  
+  </aside>
+  <section class="realisations" id="realisations">
+    <h2><span>Réalisations</span> </h2>
+    <div class="container--card">
+      <div class="card-container">
+        <div class="card-wrapper card-wrapper--realisations">
+          
+          <div class="card">
+            <div class="card-front" data-aos="fade-up">
+              <img class="img--card img--card--realisations" src="./img/cieplay.webp" alt="Image du site de la Compagnie Play">
+              <h3 class="card-front--content">
+                <span>La Compagnie Play</span> 
+              </h3>
+            </div>
+            <div class="card-back">
+              <div class="card-back--content">
+                <h3>La Compagnie Play</h3>
+                <p>Site vitrine réalisé en php (MVC). </p>
               </div>
-              <div class="col-12 col-md-6">
-                
-                  <div class="progress mt-0 progress--js"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          <h5>Javascript</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          <h5>VueJs</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                          <h5>Php</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                          <h5>WordPress</h5>
-                      </div>
-                  </div>
-                  <div class="progress"> 
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                          <h5>Sql</h5>
-                      </div>
-                  </div>
-              </div>
+              <a href="http://compagnieplay.com" target="_blank" class="btn">En savoir plus</a>
+            </div>
           </div>
-      </div>
-    </section>
-
-    <div class="white-divider"></div>
-
-    <section class="section--skills">
-      <div class="heading">
-        <h2>Autres compétences</h2>
-      </div>
-      <div class="container mb-3">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="progress"> 
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        <h5>Adobe XD</h5>
-                    </div>
-                </div>
-                <div class="progress"> 
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                        <h5>Adobe Illustrator</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="progress mt-0 progress--js"> 
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                        <h5>Adobe Photoshop</h5>
-                    </div>
-                </div>
-                <div class="progress"> 
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        <h5>Word & Excel</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <div class="white-divider" id="divider--formation"></div>
-
-  <section class="section--skills" id="experience">
-      <div class="container mb-3">
-          <div class="row timeline--container">
-            <div class="heading">
-                <h2 class="mt-3"> &nbsp;Formations &nbsp; & &nbsp; Expériences</h2>
-            </div>
-            <ul class="timeline">
-                <li class="col-12 col-md-6 ">
-                    <div class="timeline-panel-container">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3>Openclassrooms</h3>
-                                <h4>Formation Développeur Web</h4>
-                                <p class="text-muted"><small class="fas fa-clock"></small> Juillet 2021 à Janvier 2022</p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Formation de Développeur Web orientée Javascript. </p>
-                                <p>Formation de 6 mois certifiée grand Label du numérique - équivalent niveau 5 (bac +2). </p>
-                                <p>Html, Css, Scss, Seo, Javascript, NodeJs, Sql, MongoDb et VueJs. </p>
-                                <p>Différents projets réalisés durant cette formation afin de monter en compétences sur le frontend et le Seo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-6 ">
-                    <div class="timeline-panel-container-inverted">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3>Be Vinum à Vauvert</h3>
-                                <h4>Stage marketing digital</h4>
-                                <p class="text-muted"><small class="fas fa-clock"></small> mars 2021 </p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Proposition de design, </p>
-                                <p>Refonte partielle de site,</p>
-                                <p>Création de signature email personnalisée et vidéo publicitaire,...</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="col-md-6">
-                    <div class="timeline-panel-container">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3>O'Clock</h3>
-                                <h4>Formation Développeur Web</h4>
-                                <p class="text-muted"><small class="fas fa-clock"></small> mars 2020 à octobre 2020 </p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Formation certifiée grand Label du numérique - équivalent niveau 5 (bac +2). </p>
-                                <p>Formation de 6 mois certifiée grand Label du numérique - équivalent niveau 5 (bac +2).</p>
-                                <p>Html, Css, Scss, Php, Javascript, WordPress, Sql et VueJs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-     </div>
- </section>  
- <div class="white-divider"></div>
- <section id="portfolio">
-  <div class="container">
-    <div class="heading">
-        <h2>Portfolio</h2>
-    </div>
-    <div class="row mt-5">
-      <div class="col-md-4 ">
-        <a href="http://compagnieplay.com" target="_blank">
-            <img class="img-thumbnail" src="images/cieplay.JPG" alt="La Compagnie Play">
-        </a>
-      </div>
-                
-      <div class="col-md-4">
-        <a href="https://lanaturoquotidien.fr/" target="_blank">
-            <img class="img-thumbnail" src="images/la_nature_au_quotidien.jpg" alt="La Natur'O Quotidien">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://carredamien.github.io/reservia.github.io/" target="_blank">
-            <img class="img-thumbnail" src="images/reservia.jpg" alt="Réservia">
-        </a>
-      </div>
-
-      <div class="col-md-4">
-        <a href="https://carredamien.github.io/DamienCarre_3_16082021/" target="_blank">
-            <img class="img-thumbnail" 
-            src="images/ohmyfood.JPG" alt="OhMyFood">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://github.com/carredamien/P7_Carre_Damien_Groupomania" target="_blank">
-            <img class="img-thumbnail" 
-            src="images/screenshot_groupomania.JPG" alt="Groupomania">
-        </a>
-      </div>
-       <div class="col-md-4">
-        <a href="https://github.com/carredamien/kanap" target="_blank">
-            <img class="img-thumbnail" 
-            src="images/screenshot_kanap.JPG" alt="Kanap">
-        </a>
-      </div>
       
-     </div>
-    </div>
- </section>
-
-    <div class="white-divider" id="divider--certification"></div>
-
-    <section class=" mb-5">
-        <div class="heading">
-          <h2>Mes certifications</h2>
         </div>
-        <div class="col-md-11 mx-auto">
-            <div id="slider" style="width:100%;max-width:100%; height:14rem; overflow: hidden; display:flex ">
-            <figure style="position: relative; display: flex; align-items:center;  margin:0; padding:0; width:1200%;font-size: 0;text-align: left;">
-                <img src="./docs/html.webp" alt="certification html css ">
-                <img src="./docs/bootstrap.webp" alt="certification bootstrap">
-                <img src="./docs/opquast.webp" alt="certification opquast niveau avancé">
-                <img src="./docs/udemy-dev.webp" alt="certification développeur web">
-                <img src="./docs/udemy.webp" alt="certification udemy html">
-                <img src="./docs/js-1.webp" alt="certification javascript">
-                <img src="./docs/js2.webp" alt="certification javascript suite">
-                <img src="./docs/vuejs.webp" alt="certification vuejs">
-                <img src="./docs/nodeJPG.webp" alt="certification nodejs">
-                <img src="./docs/sass.webp" alt="certification sass">
-                <img src="./docs/seo.webp" alt="certification seo référencement">
-                <img src="./docs/wordpressJPG.webp" alt="certification wordpress">
-                <img src="./docs/php.webp" alt="certification php">
-                <img src="./docs/xd.webp" alt="certification adobe xd">
-                <img src="./docs/illustrator.webp" alt="certification adobe illustrator">
-                <img src="./docs/maquette.webp" alt="certification création de maquette">
-            </figure>
+        
+        <div class="card-wrapper card-wrapper--realisations">
+          <div class="card">
+            <div class="card-front" data-aos="fade-up">
+              <img class="img--card img--card--realisations" src="./img/la_nature_au_quotidien.webp" alt="Image du site de la natur'o qutotidien">
+              <h3 class="card-front--content">
+                <span>La Natur'o quotidien</span> 
+              </h3>
+            </div>
+            <div class="card-back">
+              <div class="card-back--content">
+                <h3>La Natur'o quotidien</h3>
+                <p>Site vitrine Wordpress avec thème custom.</p>
+              </div>
+              <a href="https://lanaturoquotidien.fr" target="_blank" class="btn">En savoir plus</a>
+            </div>
+          </div>
         </div>
-    
+        <div class="card-wrapper card-wrapper--realisations">
+          <div class="card">
+            <div class="card-front" data-aos="fade-up">
+              <img class="img--card img--card--realisations" src="./img/groupomania.webp" alt="Image du projet Groupomania">
+              <h3 class="card-front--content">
+                <span>Groupomania</span> 
+              </h3>
+            </div>
+            <div class="card-back">
+              <div class="card-back--content">
+                <h3>Projet de formation: Groupomania</h3>
+                <p>Réseau social d'entreprise réalisé avec Bootstrap, Vuejs, NodeJs & Sequelize. </p>
+              </div>
+              <a href="https://github.com/carredamien/P7_Carre_Damien_Groupomania" target="_blank" class="btn">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper card-wrapper--realisations">
+          <div class="card">
+            <div class="card-front" data-aos="fade-up">
+              <img class="img--card img--card--realisations" src="./img/Kanap.webp" alt="Image de l'intégration Réservia">
+              <h3 class="card-front--content">
+                <span>Kanap</span> 
+              </h3>
+            </div>
+            <div class="card-back">
+              <div class="card-back--content">
+                <h3>Projet de formation: Kanap</h3>
+                <p>Fonctionnalités en Vanilla JS & connexion à l'api</p>
+              </div>
+              <a href="https://github.com/carredamien/damiencarre_05_07102021" target="_blank" class="btn">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper card-wrapper--realisations">
+          <div class="card">
+            <div class="card-front" data-aos="fade-up">
+              <img class="img--card img--card--realisations" src="./img/ohmyfood.webp" alt="Image de l'intégration Réservia">
+              <h3 class="card-front--content">
+                <span>Ohmyfood</span> 
+              </h3>
+            </div>
+            <div class="card-back">
+              <div class="card-back--content">
+                <h3>Projet de formation: Ohmyfood</h3>
+                <p>Intégration html/scss</p>
+              </div>
+              <a href="https://carredamien.github.io/DamienCarre_3_16082021/" target="_blank" class="btn">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper card-wrapper--realisations">
+          <div class="card">
+            <div class="card-front" data-aos="fade-up">
+              <img class="img--card img--card--realisations" src="./img/reservia.webp" alt="Image de l'intégration Réservia">
+              <h3 class="card-front--content">
+                <span>Réservia</span> 
+              </h3>
+            </div>
+            <div class="card-back">
+              <div class="card-back--content">
+                <h3>Projet de formation: Réservia</h3>
+                <p>Intégration html/css </p>
+              </div>
+              <a href="https://carredamien.github.io/DamienCarre_2_03082021/" target="_blank" class="btn">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+  
       </div>
+    </div>
+     
+  </section>
+  <section id="prestations" class="prestations">
+    <h2><span>Formations et expériences</span> </h2>
+    <p></p>
+     <div class="container--card">
+      <div class="card-container">
+        <div class="card-wrapper">
+            <div class="card">
+              <div class="card-front" data-aos="fade-up">
+                <img class="img--card"  style=" height: 23rem; width:23rem;" src="./img/oc.webp" alt="logo openclassrooms">
+                <h3 class="card-front--content">
+                  <span>Formation Openclassrooms</span> 
+                </h3>
+              </div>
+              <div class="card-back">
+                <div class="card-back--content">
+                  <h3>Formation Openclassrooms (2021</h3>
+                  <p>6 mois de formation intensives <br> but: monter en compétences frontend (Javascript, VueJs & NodeJs). <br>Obtention du titre pro (équivalence bac+2)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front" data-aos="fade-up">
+                  <img class="img--card" style="width:25rem; height: 8rem; margin: 6rem 0 8rem;"  src="./img/bevinum.png" alt="">
+                  <h3 class="card-front--content">
+                    <span>Stage Société Be Vinum</span> 
+                  </h3>
+                </div>
+                <div class="card-back">
+                  <div class="card-back--content">
+                    <h3>Be Vinum?</h3>
+                    <p>Stage d'un mois (2021)</p>
+                    <p>Intégration html/css, refonte partielle de site...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front" data-aos="fade-up">
+                  <img style="width:25rem; height: 23rem;" class="img--card" src="./img/o'clock.png" alt="logo oclock">
+                  <h3 class="card-front--content">
+                    <span>Formation O'Clock</span> 
+                  </h3>
+                </div>
+                <div class="card-back">
+                  <div class="card-back--content">
+                    <h3>Formation O'Clock (2020)</h3>
+                    <p>6 mois de formations intensives. <br>Apprentissage html, javascript, VueJs, php, Wordpress, Bootstrap & Sql.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="card-wrapper">
+              <div class="card">
+                <div class="card-front" data-aos="fade-up">
+                  <img style="height: 23rem;" class="img--card" src="./img/programmation.png" alt="dessin d'un développeur">
+                  <h3 class="card-front--content">
+                    <span>Apprentissage autodidacte</span> 
+                  </h3>
+                </div>
+                <div class="card-back">
+                  <div class="card-back--content">
+                    <h3>Apprentissage autodidacte (2018 - 2020)</h3>
+                    <p>J'ai commencé les intégrations html/css par passion et curiosité en 2018 jusqu'a 2020.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </section>
+  
+  <section id="contact" class="contact">
+    <h2><span>Contact</span> </h2>
+    <div class="details">
+      <p>Vous pouvez me contacter par téléphone ou par mail, à très bientôt 😊.</p>
+      <p>Damien Carré</p>
+      <p>1 impasse de la garenne</p>
+      <p>30600 Vauvert</p>
+      <p><a href="tel:+33672518669"><span class="bold">Tél: 06.72.51.86.69</span></a></p>
+    </div>
+    <section class="container--form">
+      <form >
+        <h3>M'envoyer un message</h3>
+       <a href="mailto:damiencarre07@gmail.com"><img class="mail" src="./img/mail1.svg" alt="mailto"> </a>
+      </form>
     </section>
-  </main>
-  <footer class="text-center">
-    <section class="social">
-       <a href="https://www.linkedin.com/in/damiencarr%C3%A9/"><img class="social--linkledin" src="./images/linkledin_portfolio.png" alt="icone github"></a>
-       <a href="https://github.com/carredamien"><img class="social--git" src="./images/github_portfolio.png" alt="icone linkledin"></a>
-    </section>
-    <a href="#about">
-        <span class="fas fa-chevron-up"></span>
-    </a>
-    <h5>© Tout droits réservés - Damien Carré</h5>
-</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+  </section>
+  <footer class="footer">
+    <nav class="nav--footer">
+      <!-- <ul class="footer__list">
+        <li class="footer__content">
+          <a href="./rgpd.html">Mentions légales</a>
+        </li>
+        <li class="footer__content">
+          <a href="./rgpd.html">Politique de confidentialité</a>
+        </li>
+      </ul> -->
+      <ul class="footer__list footer__list--social">
+        <li class="footer__content">
+          <a href="https://github.com/carredamien" target="_blank">
+            <img class="social" src="./img/github.svg" alt="icon facebook">
+          </a> 
+        </li>
+        <li class="footer__content">
+          <a href="https://www.linkedin.com/in/damiencarr%C3%A9/" target="_blank">
+            <img class="social" src="./img/linkedin.svg" alt="icon facebook">
+          </a> 
+        </li>
+      </ul>
+    </nav>
+    <p class="footer__content footer__content--p"><a class="copyright" href="rgpd.html">© Tout droits réservés Damien Carré</a></p>
+  </footer>
+
+  <img class="btn-up" id="up" src="./img/arrow-up.svg" alt="bouton fléche pour remonter en haut du site">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./script.js" defer></script>
 </body>
+
 </html>
